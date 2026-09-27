@@ -1,0 +1,14 @@
+# rebuilt by the pipeline on every run
+data/
+*.sqlite
+logs/chaos_outputs/**/*.sqlite
+# python / tooling
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+# staging folders left by an interrupted publish
+output/.staging-*
+output/.old-*

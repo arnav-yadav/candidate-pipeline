@@ -1,0 +1,52 @@
+# Single-view candidate pipeline — configuration (behaviour lives in code, settings live here)
+
+client:
+  role: Customer Support Associate
+  posting_id: CS-AGENT-BLR
+  posting_opened_on: "2025-11-15"
+  timezone: "Asia/Kolkata"
+
+sources:
+  job_board_api:
+    base_url: "http://127.0.0.1:8765"
+    path: "/v1/postings/CS-AGENT-BLR/applications"
+    per_page: 100
+    start_mock_api: true
+  careers_db: "client_systems/careers_site/careers_site.db"
+  referral_form: "client_systems/referral_form/referral_form_responses.csv"
+  whatsapp_export: "client_systems/whatsapp/WhatsApp Chat with Hiring - Ops.txt"
+  ops_head_mailbox: "client_systems/ops_head_inbox/ops_head_inbox.mbox"
+  recruiter_tracker: "client_systems/recruiter_tracker/Hiring Tracker - Support Agents.csv"
+  audit_sample: "client_systems/audit/recruiter_labelled_pairs.csv"
+
+# Which sources the KPI cannot be computed without (halt) vs which only reduce coverage (degrade)
+critical_sources: [job_board_api, careers_db, recruiter_tracker]
+
+http:
+  timeout_seconds: 10
+  max_attempts: 4
+  backoff_seconds: [1, 2, 4]
+
+history_start: "2026-01-01"          # first day any source has data
+
+metrics:
+  duplicate_lookback_days: 90        # a re-screen counts as duplicate if the same person was screened in the last N days
+  minutes_per_screen: 10             # Assignment 1: 88 re-screens ~ 15 recruiter-hours
+  unreviewed_after_days: 30
+  reapply_window_days: 75            # H1 vs H2 test window
+  sensitivity_lookbacks: [30, 90, 180, 3650]
+
+matching:
+  hub_max_distinct_first_names: 3    # an identifier shared by more first names than this is treated as a placeholder
+  placeholder_phones: ["9999999999", "0000000000", "9876543210", "1234567890"]
+  placeholder_emails: ["na", "n/a", "-", "none", "test@test.com", "na@gmail.com"]
+  tracker_link_max_days: 21          # a manually-logged row is matched to an application at most N days earlier
+
+validation:
+  max_critical_failure_share: 0.05   # halt the month if more than this share of applications fail a critical rule
+
+paths:
+  raw: data/raw
+  warehouse: data/warehouse.sqlite
+  output: output
+  logs: logs
