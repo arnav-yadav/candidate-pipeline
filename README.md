@@ -166,7 +166,7 @@ only merges on phone when the names are compatible.
 That leaves the hard case: a WhatsApp message with a phone number but **no name**. Auto-merging those made no
 incorrect merges in this sample (92.7% recall), but on a phone that two siblings share, a nameless message can't be
 attributed to either, and one wrong guess breaks the guardrail. Zero in 237 pairs isn't zero risk. So the chosen rule
-sends them to a **review queue** (8–16 a month, one phone call each) instead of guessing. Recall on the labelled pairs
+sends them to a **review queue** (8–12 applications a month, one phone call each) instead of guessing. Recall on the labelled pairs
 drops to 79.3%, but those matches aren't lost, they're waiting for confirmation, and the KPI's upper bound shows what
 they would add: at most about 2 points.
 

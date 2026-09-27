@@ -1,6 +1,0 @@
-09:47:25 | INFO    | [setup] started the simulated job-board API (pid 751)
-09:47:25 | WARNING | [extract] job_board_api page=1 | ConnectionError | attempt=1/4 | retry in 1s
-09:47:26 | WARNING | [extract] job_board_api page=1 | ConnectionError | attempt=2/4 | retry in 2s
-09:47:28 | WARNING | [extract] job_board_api page=1 | ConnectionError | attempt=3/4 | retry in 4s
-09:47:32 | ERROR   | [extract] HALTED 2026-08: job_board_api page=1: failed after 4 attempts (last error: ConnectionError) - previous outputs for this month (if any) are unchanged
-09:47:32 | INFO    | RESULT 2026-08 FAILED   job_board_api page=1: failed after 4 attempts (last error: ConnectionError)

@@ -1,7 +1,0 @@
-rule,pairs_evaluated,true_matches_found,false_merges,missed_matches,correctly_kept_apart,precision_pct,recall_pct
-name_only,162,89,27,33,13,76.7,73.0
-email_only,162,103,0,19,40,100.0,84.4
-phone_only,162,62,2,60,38,96.9,50.8
-email_or_phone,162,115,2,7,38,98.3,94.3
-chosen_plus_unverified,162,115,0,7,40,100.0,94.3
-chosen,162,115,0,7,40,100.0,94.3

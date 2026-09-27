@@ -138,7 +138,7 @@ def run_month(month: str, cfg: dict, chaos: str | None, logger) -> dict:
         con = sqlite3.connect(wh)
         try:
             month_queue = queue[pd.to_datetime(queue["applied_date"]).between(pd.Timestamp(w.start), pd.Timestamp(w.end))]
-            metrics, coh, sens = month_metrics(con, w, cfg, audit_eval, len(month_queue))
+            metrics, coh, sens = month_metrics(con, w, cfg, audit_eval, int(month_queue["application_id"].nunique()))
         finally:
             con.close()
 

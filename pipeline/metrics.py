@@ -113,7 +113,7 @@ def month_metrics(con, w, cfg, audit_eval: pd.DataFrame, review_count: int):
          "numerator": int(chosen["false_merges"]) if chosen is not None else None,
          "denominator": int(chosen["pairs_evaluated"]) if chosen is not None else None,
          "basis": f"target 0; recall {chosen['recall_pct']}% on the same sample" if chosen is not None else "no labelled sample"},
-        {"id": "M5a", "metric": "Possible matches awaiting recruiter confirmation", "value": review_count, "unit": "applications",
+        {"id": "M5a", "metric": "Applications awaiting recruiter confirmation", "value": review_count, "unit": "applications",
          "numerator": review_count, "denominator": None,
          "basis": "nameless records whose phone matches a named candidate - not merged automatically"},
     ]

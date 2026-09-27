@@ -145,7 +145,8 @@ send to review queue  <=>  same phone, but one side has no name (a nameless What
 - **Nameless phone matches are the hard case.** Auto-merging them made no incorrect merges *in this sample*
   (92.7% recall), but a nameless WhatsApp message from a phone that two siblings share can't be attributed to either,
   and a single wrong guess breaks the guardrail. Zero in 237 pairs isn't zero risk. So these go to a **review queue**
-  instead: 8–16 applications a month, each settled by one phone call.
+  instead: 8–12 applications a month, each settled by one phone call (a message on a phone shared by two named
+  people appears in the queue once per possible match).
 - The price is recall on the labelled pairs: 79.3% instead of 92.7%. Those matches aren't lost, they're pending
   confirmation, and the KPI's upper bound (M1-upper, at most about 2 points higher) shows what they would add.
   It's a deliberate trade, made to honour the guardrail.
