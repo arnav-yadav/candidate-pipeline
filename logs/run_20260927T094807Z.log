@@ -1,0 +1,25 @@
+09:48:07 | INFO    | [setup] started the simulated job-board API (pid 818)
+09:48:07 | INFO    | [extract] job_board_api page=1 rows=100 cumulative=100 total=1133
+09:48:07 | INFO    | [extract] job_board_api page=2 rows=100 cumulative=200 total=1133
+09:48:07 | WARNING | [extract] job_board_api page=3 | HTTP 500 | attempt=1/4 | retry in 1s
+09:48:08 | INFO    | [extract] job_board_api page=3 rows=100 cumulative=300 total=1133
+09:48:08 | INFO    | [extract] job_board_api page=4 rows=101 cumulative=401 total=1133
+09:48:08 | WARNING | [extract] job_board_api page=5 | HTTP 429 | attempt=1/4 | retry in 1s
+09:48:09 | INFO    | [extract] job_board_api page=5 rows=100 cumulative=501 total=1133
+09:48:09 | INFO    | [extract] job_board_api page=6 rows=100 cumulative=601 total=1133
+09:48:09 | INFO    | [extract] job_board_api page=7 rows=100 cumulative=701 total=1133
+09:48:09 | INFO    | [extract] job_board_api page=8 rows=100 cumulative=801 total=1133
+09:48:09 | INFO    | [extract] job_board_api page=9 rows=100 cumulative=901 total=1133
+09:48:09 | INFO    | [extract] job_board_api page=10 rows=100 cumulative=1001 total=1133
+09:48:09 | INFO    | [extract] job_board_api page=11 rows=100 cumulative=1101 total=1133
+09:48:09 | INFO    | [extract] job_board_api page=12 rows=33 cumulative=1134 total=1133
+09:48:09 | WARNING | [extract] job_board_api: 1 record(s) repeated across pages (offset drift) - kept once
+09:48:09 | INFO    | [extract] careers_db rows=562 (COUNT(*) check passed; UTC cut-off 2026-08-31 18:29:59)
+09:48:09 | INFO    | [extract] referral_form rows=350 (of 350 in file)
+09:48:10 | INFO    | [extract] whatsapp_export messages=1295 -> applications=506 {'application': 506, 'follow_up_or_media': 492, 'business_reply': 237, 'not_hiring': 60}
+09:48:10 | WARNING | [extract] ops_head_mailbox unavailable - continuing DEGRADED ({'reason': 'mailbox export not found'})
+09:48:10 | INFO    | [extract] recruiter_tracker rows=2548 (sheet export; events after the cut-off are ignored later)
+09:48:32 | INFO    | [resolve] applications=2788 -> candidates=2078 | tracker links {'ref': 1702, 'identity': 540, 'tracker_only': 237, 'name_in_window': 41} | review queue=95 | name conflicts=0
+09:48:33 | INFO    | [model] warehouse built in one transaction; integrity checks passed {'candidate': 2078, 'application': 2788, 'tracker_row': 2520, 'recruiter_event': 5022}
+09:48:35 | INFO    | [save] 2026-08 published (DEGRADED): M1=13.1% (name matching 29.0%) M2=26.1% M3=12.0 days
+09:48:35 | INFO    | RESULT 2026-08 DEGRADED ops_head_mailbox unavailable: its channel is missing from every metric

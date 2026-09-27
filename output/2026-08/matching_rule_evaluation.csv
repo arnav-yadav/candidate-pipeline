@@ -1,0 +1,7 @@
+rule,pairs_evaluated,true_matches_found,false_merges,missed_matches,correctly_kept_apart,precision_pct,recall_pct
+name_only,237,117,36,62,22,76.5,65.4
+email_only,237,107,0,72,58,100.0,59.8
+phone_only,237,112,2,67,56,98.2,62.6
+email_or_phone,237,168,2,11,56,98.8,93.9
+chosen_plus_unverified,237,166,0,13,58,100.0,92.7
+chosen,237,142,0,37,58,100.0,79.3

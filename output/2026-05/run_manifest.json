@@ -1,0 +1,157 @@
+{
+  "run_id": "20260927T094535695271Z",
+  "month": "2026-05",
+  "as_of": "2026-05-31",
+  "chaos": null,
+  "status": "success",
+  "config_sha256": "c4997a4f760a4b51",
+  "code_version": {
+    "git_commit": "a05aded",
+    "uncommitted_changes": false
+  },
+  "sources": {
+    "job_board_api": {
+      "status": "ok",
+      "evidence": {
+        "pages": 7,
+        "records_received": 664,
+        "overlap_duplicates_removed": 1,
+        "unique_records": 663,
+        "api_total": 663
+      },
+      "raw_dir": "data/raw/job_board_api/asof=2026-05-31/20260927T094535695271Z"
+    },
+    "careers_db": {
+      "status": "ok",
+      "evidence": {
+        "query_count": 321,
+        "rows_returned": 321,
+        "db_sha256": "8c54e12fa91a7565",
+        "cutoff_utc": "2026-05-31 18:29:59"
+      },
+      "raw_dir": "data/raw/careers_db/asof=2026-05-31/20260927T094535695271Z"
+    },
+    "referral_form": {
+      "status": "ok",
+      "evidence": {
+        "file_rows": 350,
+        "unparseable_timestamps": 0,
+        "rows_as_of": 209,
+        "sha256": "4863649b223be23b"
+      },
+      "raw_dir": "data/raw/referral_form/asof=2026-05-31/20260927T094535695271Z"
+    },
+    "whatsapp_export": {
+      "status": "ok",
+      "evidence": {
+        "messages_parsed": 737,
+        "unparsed_lines": 0,
+        "classified": {
+          "application": 294,
+          "follow_up_or_media": 278,
+          "business_reply": 130,
+          "not_hiring": 35
+        },
+        "sha256": "1d3f0aca85e42463"
+      },
+      "raw_dir": "data/raw/whatsapp_export/asof=2026-05-31/20260927T094535695271Z"
+    },
+    "ops_head_mailbox": {
+      "status": "ok",
+      "evidence": {
+        "messages_in_file": 427,
+        "parse_failures": 0,
+        "classified": {
+          "application": 166,
+          "internal_or_robot": 69,
+          "other": 20
+        },
+        "sha256": "8654797c5b1456d5"
+      },
+      "raw_dir": "data/raw/ops_head_mailbox/asof=2026-05-31/20260927T094535695271Z"
+    },
+    "recruiter_tracker": {
+      "status": "ok",
+      "evidence": {
+        "rows": 2548,
+        "sha256": "61feb63eea11f3a3",
+        "export_is_snapshot": true
+      },
+      "raw_dir": "data/raw/recruiter_tracker/asof=2026-05-31/20260927T094535695271Z"
+    },
+    "audit_sample": {
+      "status": "ok",
+      "evidence": {
+        "pairs": 237,
+        "sha256": "43c285e7562076cd"
+      },
+      "raw_dir": "data/raw/audit_sample/asof=2026-05-31/20260927T094535695271Z"
+    }
+  },
+  "degraded": [],
+  "model": {
+    "checks": {
+      "every_application_has_a_candidate": {
+        "violations": 0,
+        "passed": true
+      },
+      "every_linked_tracker_row_points_to_an_application": {
+        "violations": 0,
+        "passed": true
+      },
+      "candidate_application_counts_add_up": {
+        "violations": 0,
+        "passed": true
+      },
+      "no_screen_counted_twice_for_one_application": {
+        "violations": 0,
+        "passed": true
+      }
+    },
+    "table_counts": {
+      "candidate": 1338,
+      "application": 1685,
+      "tracker_row": 1457,
+      "recruiter_event": 2966
+    }
+  },
+  "metrics": {
+    "M1": 13.0,
+    "M1-upper": 13.8,
+    "M1-name": 24.6,
+    "M2": 27.4,
+    "M2a": 12.5,
+    "M2b": 11.0,
+    "M3": 12.0,
+    "M3a": 80.4,
+    "M4": 8.7,
+    "M5": 0.0,
+    "M5a": 8.0
+  },
+  "rule_counts": {
+    "A01": 0,
+    "A02": 0,
+    "A03": 18,
+    "A04": 70,
+    "A05": 1,
+    "A06": 2,
+    "A07": 14,
+    "A08": 148,
+    "T02": 0,
+    "T03": 146,
+    "T04": 0,
+    "T05": 57,
+    "T06": 169,
+    "T07": 5,
+    "T08": 32
+  },
+  "outputs": {
+    "duplicate_window_sensitivity.csv": "250cf2afdbee2197",
+    "evidence.md": "60e869f9b07c7cb2",
+    "identity_review_queue.csv": "d0f894397e56ab10",
+    "matching_rule_evaluation.csv": "35ef43eed0142648",
+    "metrics.csv": "45480abcd9a65224",
+    "quality_report.csv": "17b7236114d061ea",
+    "unreviewed_worklist.csv": "47e5dd5f10b8dcef"
+  }
+}
