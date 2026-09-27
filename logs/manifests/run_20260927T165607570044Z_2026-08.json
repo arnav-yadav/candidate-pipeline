@@ -1,0 +1,157 @@
+{
+  "run_id": "20260927T165607570044Z",
+  "month": "2026-08",
+  "as_of": "2026-08-31",
+  "chaos": null,
+  "status": "success",
+  "config_sha256": "c4997a4f760a4b51",
+  "code_version": {
+    "git_commit": "c590578",
+    "uncommitted_changes": false
+  },
+  "sources": {
+    "job_board_api": {
+      "status": "ok",
+      "evidence": {
+        "pages": 12,
+        "records_received": 1134,
+        "overlap_duplicates_removed": 1,
+        "unique_records": 1133,
+        "api_total": 1133
+      },
+      "raw_dir": "data/raw/job_board_api/asof=2026-08-31/20260927T165607570044Z"
+    },
+    "careers_db": {
+      "status": "ok",
+      "evidence": {
+        "query_count": 562,
+        "rows_returned": 562,
+        "db_sha256": "8c54e12fa91a7565",
+        "cutoff_utc": "2026-08-31 18:29:59"
+      },
+      "raw_dir": "data/raw/careers_db/asof=2026-08-31/20260927T165607570044Z"
+    },
+    "referral_form": {
+      "status": "ok",
+      "evidence": {
+        "file_rows": 350,
+        "unparseable_timestamps": 0,
+        "rows_as_of": 350,
+        "sha256": "4863649b223be23b"
+      },
+      "raw_dir": "data/raw/referral_form/asof=2026-08-31/20260927T165607570044Z"
+    },
+    "whatsapp_export": {
+      "status": "ok",
+      "evidence": {
+        "messages_parsed": 1295,
+        "unparsed_lines": 0,
+        "classified": {
+          "application": 506,
+          "follow_up_or_media": 492,
+          "business_reply": 237,
+          "not_hiring": 60
+        },
+        "sha256": "1d3f0aca85e42463"
+      },
+      "raw_dir": "data/raw/whatsapp_export/asof=2026-08-31/20260927T165607570044Z"
+    },
+    "ops_head_mailbox": {
+      "status": "ok",
+      "evidence": {
+        "messages_in_file": 427,
+        "parse_failures": 0,
+        "classified": {
+          "application": 287,
+          "internal_or_robot": 108,
+          "other": 32
+        },
+        "sha256": "8654797c5b1456d5"
+      },
+      "raw_dir": "data/raw/ops_head_mailbox/asof=2026-08-31/20260927T165607570044Z"
+    },
+    "recruiter_tracker": {
+      "status": "ok",
+      "evidence": {
+        "rows": 2548,
+        "sha256": "61feb63eea11f3a3",
+        "export_is_snapshot": true
+      },
+      "raw_dir": "data/raw/recruiter_tracker/asof=2026-08-31/20260927T165607570044Z"
+    },
+    "audit_sample": {
+      "status": "ok",
+      "evidence": {
+        "pairs": 237,
+        "sha256": "43c285e7562076cd"
+      },
+      "raw_dir": "data/raw/audit_sample/asof=2026-08-31/20260927T165607570044Z"
+    }
+  },
+  "degraded": [],
+  "model": {
+    "checks": {
+      "every_application_has_a_candidate": {
+        "violations": 0,
+        "passed": true
+      },
+      "every_linked_tracker_row_points_to_an_application": {
+        "violations": 0,
+        "passed": true
+      },
+      "candidate_application_counts_add_up": {
+        "violations": 0,
+        "passed": true
+      },
+      "no_screen_counted_twice_for_one_application": {
+        "violations": 0,
+        "passed": true
+      }
+    },
+    "table_counts": {
+      "candidate": 2121,
+      "application": 2887,
+      "tracker_row": 2520,
+      "recruiter_event": 5022
+    }
+  },
+  "metrics": {
+    "M1": 13.0,
+    "M1-upper": 14.6,
+    "M1-name": 27.6,
+    "M2": 28.3,
+    "M2a": 12.1,
+    "M2b": 13.1,
+    "M3": 12.0,
+    "M3a": 83.0,
+    "M4": 9.3,
+    "M5": 0.0,
+    "M5a": 12.0
+  },
+  "rule_counts": {
+    "A01": 0,
+    "A02": 0,
+    "A03": 28,
+    "A04": 118,
+    "A05": 2,
+    "A06": 7,
+    "A07": 23,
+    "A08": 273,
+    "T02": 0,
+    "T03": 249,
+    "T04": 0,
+    "T05": 84,
+    "T06": 288,
+    "T07": 12,
+    "T08": 49
+  },
+  "outputs": {
+    "duplicate_window_sensitivity.csv": "f213e9dcd0241465",
+    "evidence.md": "2c981e4aee5c70de",
+    "identity_review_queue.csv": "59201e42c816f003",
+    "matching_rule_evaluation.csv": "08877ccdf1386d8e",
+    "metrics.csv": "2143d7a120f0934d",
+    "quality_report.csv": "378091e7022ce038",
+    "unreviewed_worklist.csv": "a04f89670a069c7b"
+  }
+}

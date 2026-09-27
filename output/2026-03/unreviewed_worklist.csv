@@ -1,0 +1,55 @@
+application_id,candidate_id,name,source,applied_date,review_state,phone,email
+careers:5050,CAND-careers-5050,Jyoti Singh,careers,2026-02-01,logged_not_screened,8952354905,singhjyoti@gmail.com
+careers:5055,CAND-careers-5055,pooja sharma,careers,2026-02-05,wrongly_marked_duplicate,9109503296,pooja29@gmail.com
+careers:5085,CAND-careers-5085,Sneha Gill,careers,2026-02-26,logged_not_screened,7562294416,sneha.gill@yahoo.com
+careers:5090,CAND-careers-5090,amit das,careers,2026-02-28,wrongly_marked_duplicate,6437878356,das.amit@rediffmail.com
+careers:5091,CAND-careers-5091,Neha Kumar,careers,2026-02-28,wrongly_marked_duplicate,6676983339,nehakumar83@gmail.com
+email:<cand-00028@mail.gmail.com>,CAND-email-<cand-00028@mail.gmail.com>,Ajay Singh,email,2026-02-06,logged_not_screened,,ajay35@hotmail.com
+email:<cand-00029@mail.gmail.com>,CAND-email-<cand-00029@mail.gmail.com>,Prakash Patel,email,2026-02-06,never_logged,7710449831,ppatel96@gmail.com
+email:<cand-00030@mail.gmail.com>,CAND-email-<cand-00030@mail.gmail.com>,Rohit Singh,email,2026-02-11,logged_not_screened,6264745328,singhrohit@gmail.com
+email:<cand-00035@mail.gmail.com>,CAND-email-<cand-00035@mail.gmail.com>,Mary Ghosh,email,2026-02-14,never_logged,,maryghosh@yahoo.com
+email:<cand-00036@mail.gmail.com>,CAND-email-<cand-00036@mail.gmail.com>,,email,2026-02-15,never_logged,9293319931,amit.rao12@yahoo.com
+email:<cand-00037@mail.gmail.com>,CAND-email-<cand-00037@mail.gmail.com>,Rahul Gupta,email,2026-02-16,never_logged,,rahulgupta92@gmail.com
+email:<cand-00038@mail.gmail.com>,CAND-email-<cand-00038@mail.gmail.com>,Ravi Singh,email,2026-02-18,logged_not_screened,9580171291,rsingh85@gmail.com
+email:<cand-00041@mail.gmail.com>,CAND-email-<cand-00041@mail.gmail.com>,"Patel, Priya",email,2026-02-19,never_logged,,priya.patel50@outlook.com
+job_board:JB-100094,CAND-job_board-JB-100094,Priya Sharma,job_board,2026-02-01,wrongly_marked_duplicate,6662497180,priya.sharma@yahoo.com
+job_board:JB-100097,CAND-job_board-JB-100097,Rahul Kumar,job_board,2026-02-02,wrongly_marked_duplicate,8974868512,kumar.rahul@rediffmail.com
+job_board:JB-100099,CAND-job_board-JB-100099,"Pillai, Nisha",job_board,2026-02-02,logged_not_screened,,pillai.nisha@yahoo.com
+job_board:JB-100112,CAND-job_board-JB-100112,"Verma, Priya",job_board,2026-02-05,wrongly_marked_duplicate,9239914418,priyaverma70@gmail.com
+job_board:JB-100113,CAND-job_board-JB-100113,Rahul Bhat,job_board,2026-02-05,wrongly_marked_duplicate,8014812582,rahul.bhat@rediffmail.com
+job_board:JB-100122,CAND-job_board-JB-100122,VENKAT MENON,job_board,2026-02-07,logged_not_screened,9081947576,vmenon70@gmail.com
+job_board:JB-100128,CAND-job_board-JB-100128,Kavya Verma,job_board,2026-02-09,logged_not_screened,,kavyaverma@gmail.com
+job_board:JB-100133,CAND-job_board-JB-100133,POOJA SHARMA,job_board,2026-02-10,wrongly_marked_duplicate,7275292755,psharma62@outlook.com
+job_board:JB-100143,CAND-job_board-JB-100143,PRIYA BOSE,job_board,2026-02-13,wrongly_marked_duplicate,,priya34@gmail.com
+job_board:JB-100150,CAND-job_board-JB-100150,"Pandey, Shreya",job_board,2026-02-14,logged_not_screened,,spandey50@gmail.com
+job_board:JB-100174,CAND-job_board-JB-100174,GEETA SHARMA,job_board,2026-02-20,wrongly_marked_duplicate,9487580582,gsharma62@gmail.com
+job_board:JB-100177,CAND-job_board-JB-100177,"Sharma, Amit",job_board,2026-02-21,logged_not_screened,8439134812,sharmaamit@gmail.com
+job_board:JB-100197,CAND-job_board-JB-100197,"Sharma, Sandeep",job_board,2026-02-26,wrongly_marked_duplicate,7349140214,sandeep.sharma69@rediffmail.com
+job_board:JB-100198,CAND-job_board-JB-100198,RITU SINGH,job_board,2026-02-26,wrongly_marked_duplicate,6131720547,ritu82@gmail.com
+job_board:JB-100206,CAND-job_board-JB-100206,"Kumar, Rahul",job_board,2026-02-28,wrongly_marked_duplicate,,rahulkumar10@gmail.com
+referral:RF0047,CAND-referral-RF0047,Nitin N,referral,2026-02-01,never_logged,8551065538,
+referral:RF0049,CAND-referral-RF0049,Priya Sharma,referral,2026-02-02,logged_not_screened,7834671886,
+referral:RF0055,CAND-referral-RF0055,Komal K,referral,2026-02-10,never_logged,7697690601,
+referral:RF0068,CAND-referral-RF0068,Joseph,referral,2026-02-24,never_logged,,
+referral:RF0069,CAND-job_board-JB-100370,Sunita,referral,2026-02-25,never_logged,6985485044,
+referral:RF0071,CAND-referral-RF0071,Ajay,referral,2026-02-26,never_logged,8183401654,ajaymishra46@gmail.com
+referral:RF0072,CAND-referral-RF0072,Rekha R,referral,2026-02-26,never_logged,8973164870,
+tracker:403,CAND-tracker-403,Amit,walk_in,2026-02-24,wrongly_marked_duplicate,8075271865,
+whatsapp:916084645663@2026-02-02T17:51,CAND-whatsapp-916084645663@2026-02-02T17-51,,whatsapp,2026-02-02,never_logged,6084645663,
+whatsapp:916170908341@2026-02-01T14:53,CAND-whatsapp-916170908341@2026-02-01T14-53,,whatsapp,2026-02-01,never_logged,6170908341,
+whatsapp:916185440017@2026-02-28T11:23,CAND-whatsapp-916185440017@2026-02-28T11-23,,whatsapp,2026-02-28,never_logged,6185440017,
+whatsapp:916216303920@2026-02-17T16:54,CAND-whatsapp-916216303920@2026-02-17T16-54,Payal Das,whatsapp,2026-02-17,wrongly_marked_duplicate,6216303920,
+whatsapp:916796312915@2026-02-20T14:41,CAND-whatsapp-916796312915@2026-02-20T14-41,Divya Jain,whatsapp,2026-02-20,never_logged,6796312915,
+whatsapp:917102075870@2026-02-27T22:34,CAND-whatsapp-917102075870@2026-01-02T16-09,Naveen Sharma,whatsapp,2026-02-27,never_logged,7102075870,
+whatsapp:917247821815@2026-02-17T18:19,CAND-tracker-45,Amit Joshi,whatsapp,2026-02-17,never_logged,7247821815,
+whatsapp:917283002488@2026-02-08T10:14,CAND-job_board-JB-100328,Jyoti Singh,whatsapp,2026-02-08,never_logged,7283002488,
+whatsapp:917331549120@2026-02-06T09:09,CAND-whatsapp-917331549120@2026-02-06T09-09,,whatsapp,2026-02-06,never_logged,7331549120,
+whatsapp:917588043305@2026-02-18T09:56,CAND-whatsapp-917588043305@2026-02-18T09-56,Payal Gupta,whatsapp,2026-02-18,never_logged,7588043305,payalgupta@gmail.com
+whatsapp:917743454973@2026-02-07T10:46,CAND-whatsapp-917743454973@2026-02-07T10-46,Manish Bhat,whatsapp,2026-02-07,never_logged,7743454973,
+whatsapp:917755536296@2026-02-07T11:05,CAND-whatsapp-917755536296@2026-02-07T11-05,Priya Agarwal,whatsapp,2026-02-07,logged_not_screened,7755536296,
+whatsapp:917865940326@2026-02-04T11:48,CAND-whatsapp-917865940326@2026-02-04T11-48,,whatsapp,2026-02-04,logged_not_screened,7865940326,karan87@gmail.com
+whatsapp:918070579956@2026-02-23T15:13,CAND-whatsapp-918070579956@2026-02-23T15-13,Ankita Verma,whatsapp,2026-02-23,never_logged,8070579956,
+whatsapp:918376598667@2026-02-06T08:19,CAND-whatsapp-918376598667@2026-02-06T08-19,,whatsapp,2026-02-06,never_logged,8376598667,ajain11@gmail.com
+whatsapp:918557273573@2026-02-22T09:51,CAND-whatsapp-918557273573@2026-02-22T09-51,Rakesh Tiwari,whatsapp,2026-02-22,never_logged,8557273573,
+whatsapp:919330332285@2026-02-06T13:00,CAND-whatsapp-919330332285@2026-02-06T13-00,,whatsapp,2026-02-06,never_logged,9330332285,priyashaikh@gmail.com
+whatsapp:919465243744@2026-02-28T12:20,CAND-whatsapp-919465243744@2026-02-28T12-20,Aarti Sharma,whatsapp,2026-02-28,never_logged,9465243744,

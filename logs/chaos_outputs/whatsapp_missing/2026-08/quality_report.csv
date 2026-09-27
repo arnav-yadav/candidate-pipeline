@@ -1,0 +1,16 @@
+rule,level,applies_to,rule_text,rows_flagged,rows_checked,share_pct
+A01,critical,applications,source record ID is unique within its source (later copies flagged),0,2332,0.0
+A02,critical,applications,application time exists and lies between the posting opening and the run cut-off,0,2332,0.0
+A03,warning,applications,at least one usable identifier (email or phone) - otherwise the person cannot be de-duplicated,28,2332,1.2
+A04,warning,applications,"email, when given, is a real address (placeholders like 'na' count as missing)",118,2332,5.06
+A05,warning,applications,"phone, when given, is a valid 10-digit Indian mobile number",2,2332,0.09
+A06,warning,applications,identifier is not a placeholder or a value shared by many different people,7,2332,0.3
+A07,warning,applications,referral: candidate phone is not the referrer's own phone,23,2332,0.99
+A08,warning,applications,a name is present (WhatsApp/email often have none; matching then relies on identifiers alone),73,2332,3.13
+T02,critical,tracker,Date Logged can be read as a date,0,2520,0.0
+T03,warning,tracker,"Date Logged is not day/month ambiguous (read day-first, the sheet's convention)",249,2520,9.88
+T04,warning,tracker,Screened On is not earlier than Date Logged,0,2520,0.0
+T05,warning,tracker,a row whose status says it was screened has a Screened On date,84,2520,3.33
+T06,warning,tracker,Status is a known label with an agreed meaning,288,2520,11.43
+T07,warning,tracker,Ref is not duplicated (the auto-import sometimes pastes a row twice),12,2520,0.48
+T08,warning,tracker,the row can be linked to an application in a source system,389,2520,15.44

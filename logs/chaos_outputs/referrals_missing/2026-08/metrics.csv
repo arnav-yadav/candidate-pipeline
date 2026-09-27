@@ -1,0 +1,12 @@
+id,metric,value,unit,numerator,denominator,basis
+M1,Duplicate-screening rate (KPI),13.6,% of applications,57,419,CV screens in 2026-08 of a person already screened in the previous 90 days (resolved identity)
+M1-upper,"Duplicate-screening rate, upper bound",15.3,% of applications,64,419,also counts nameless phone matches still awaiting recruiter confirmation
+M1-name,"Duplicate-screening rate, name matching (old baseline method)",28.9,% of applications,121,419,"same definition, but 'same person' = same first + last name string"
+M2,Applications unreviewed after 30 days,24.3,% of cohort,90,370,applications received in 2026-07 not screened within 30 days
+M2a,  of which never reached the tracker,8.1,% of cohort,30,370,arrived in a channel but no tracker row links to it
+M2b,  of which wrongly marked DUP by name,13.2,% of cohort,49,370,"marked DUP, but this person had never been screened"
+M3,Median days to first response (contacted applicants),12.0,days,,66,applications received in 2026-07 that were contacted within 30 days
+M3a,No response within 30 days,82.2,% of cohort,304,370,includes every silent rejection - the recruiter never tells rejected applicants
+M4,Recruiter hours spent re-screening,9.5,hours,57,,duplicate screens x 10 min (Assignment 1 costing assumption)
+M5,Incorrect merges on recruiter-labelled pairs (guardrail),0.0,pairs,0,193,target 0; recall 81.9% on the same sample
+M5a,Applications awaiting recruiter confirmation,12.0,applications,12,,nameless records whose phone matches a named candidate - not merged automatically

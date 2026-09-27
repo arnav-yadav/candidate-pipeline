@@ -1,0 +1,25 @@
+16:56:53 | INFO    | [setup] started the simulated job-board API (pid 249)
+16:56:53 | INFO    | [extract] job_board_api page=1 rows=100 cumulative=100 total=1133
+16:56:53 | INFO    | [extract] job_board_api page=2 rows=100 cumulative=200 total=1133
+16:56:53 | WARNING | [extract] job_board_api page=3 | HTTP 500 | attempt=1/4 | retry in 1s
+16:56:54 | INFO    | [extract] job_board_api page=3 rows=100 cumulative=300 total=1133
+16:56:54 | INFO    | [extract] job_board_api page=4 rows=101 cumulative=401 total=1133
+16:56:54 | WARNING | [extract] job_board_api page=5 | HTTP 429 | attempt=1/4 | retry in 1s
+16:56:55 | INFO    | [extract] job_board_api page=5 rows=100 cumulative=501 total=1133
+16:56:55 | INFO    | [extract] job_board_api page=6 rows=100 cumulative=601 total=1133
+16:56:55 | INFO    | [extract] job_board_api page=7 rows=100 cumulative=701 total=1133
+16:56:55 | INFO    | [extract] job_board_api page=8 rows=100 cumulative=801 total=1133
+16:56:55 | INFO    | [extract] job_board_api page=9 rows=100 cumulative=901 total=1133
+16:56:55 | INFO    | [extract] job_board_api page=10 rows=100 cumulative=1001 total=1133
+16:56:55 | INFO    | [extract] job_board_api page=11 rows=100 cumulative=1101 total=1133
+16:56:55 | INFO    | [extract] job_board_api page=12 rows=33 cumulative=1134 total=1133
+16:56:55 | WARNING | [extract] job_board_api: 1 record(s) repeated across pages (offset drift) - kept once
+16:56:55 | INFO    | [extract] careers_db rows=562 (COUNT(*) check passed; UTC cut-off 2026-08-31 18:29:59)
+16:56:55 | INFO    | [extract] referral_form rows=350 (of 350 in file)
+16:56:55 | WARNING | [extract] whatsapp_export unavailable - continuing DEGRADED ({'reason': 'export file not found'})
+16:56:55 | INFO    | [extract] ops_head_mailbox messages=427 -> applications=287 {'application': 287, 'internal_or_robot': 108, 'other': 32}
+16:56:55 | INFO    | [extract] recruiter_tracker rows=2548 (sheet export; events after the cut-off are ignored later)
+16:57:11 | INFO    | [resolve] applications=2721 -> candidates=1937 | tracker links {'ref': 1702, 'tracker_only': 389, 'identity': 388, 'name_in_window': 41} | review queue=5 | name conflicts=0
+16:57:11 | INFO    | [model] warehouse built in one transaction; integrity checks passed {'candidate': 1937, 'application': 2721, 'tracker_row': 2520, 'recruiter_event': 5022}
+16:57:12 | INFO    | [save] 2026-08 published (DEGRADED): M1=15.7% (name matching 32.7%) M2=24.7% M3=12.0 days
+16:57:12 | INFO    | RESULT 2026-08 DEGRADED whatsapp_export unavailable: its channel is missing from every metric
